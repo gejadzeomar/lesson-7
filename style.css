@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+section {
+    width: 100%;
+    position: relative;
+}
+.left {
+    position: absolute;
+    width: 400px;
+    animation-name: leftCar;
+    animation-duration: 3s;
+    animation-delay: 0.1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-fill-mode: backwards;
+    animation-direction: alternate;
+}
+
+@keyframes leftCar {
+0% {
+    left: 0;
+    bottom: 0;
+}
+25% {
+    left: 25%;
+    bottom: 0;
+}
+50% {
+    left: 49%;
+    bottom: 0;
+}
+}
+
+.right {
+    position: absolute;
+    width: 400px;
+    animation-name: rightCar;
+    animation-duration: 3s;
+    animation-delay: 0.1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-fill-mode: backwards;
+    animation-direction: alternate;
+}
+@keyframes rightCar {
+    0% {
+        right: 0;
+        bottom: 0;
+    }
+    25% {
+        right: 25%;
+        bottom: 0;
+    }
+    50% {
+        right: 49%;
+        bottom: 0;
+    }
+    }
